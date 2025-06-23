@@ -19,6 +19,8 @@ jobs:
 #        if: github.event_name != 'pull_request'
         steps:
           - uses: actions/checkout@v4
+          - name: where the fuck am I!?
+            run: ls
           - name: hi
             uses: ./../.github/workflows/dostuff.yaml
           - name: follow-up
