@@ -1,0 +1,12 @@
+name: deploy
+  on: workflow_call
+  jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        name: Test Stuff Deploy
+        environment: deploy
+        steps:
+          - name: Test deploy step
+            run: |
+                echo "hello yall"
+                exit 0
