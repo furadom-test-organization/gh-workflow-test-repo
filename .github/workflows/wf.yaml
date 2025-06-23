@@ -18,6 +18,7 @@ jobs:
         name: dostuff Caller
 #        if: github.event_name != 'pull_request'
         steps:
+          - uses: actions/checkout@v4
           - name: hi
             uses: ./.github/workflows/dostuff.yaml
           - name: follow-up
