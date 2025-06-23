@@ -14,9 +14,14 @@ jobs:
                 echo "hello world"
                 exit 0
     call-dostuff:
+        runs-on: ubuntu-latest
         name: dostuff Caller
 #        if: github.event_name != 'pull_request'
-        uses: ./.github/workflows/dostuff.yaml
+        steps:
+          - name: hi
+            uses: ./.github/workflows/dostuff.yaml
+          - name: follow-up
+            run: exit 0
     other-delegate:
         name: Nested
         uses: ./.github/workflows/nested.yaml
