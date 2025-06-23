@@ -1,0 +1,21 @@
+name: Hello There
+on: workflow_call
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    name: A job
+    steps:
+      - name: stepping
+        run: exit 0
+      - name: no more
+        run: exit 0
+  second:
+    runs-on: ubuntu-latest
+    name: B job
+    steps:
+      - name: foo
+        run: exit 0
+      - name: bar
+        run: exit 0
+      - name: baz
+        run: exit 0
