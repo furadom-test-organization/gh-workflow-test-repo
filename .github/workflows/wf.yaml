@@ -13,20 +13,16 @@ jobs:
             run: |
                 echo "hello world"
                 exit 0
-    call-dostuff:
+    deploy:
         runs-on: ubuntu-latest
-        name: dostuff Caller
-#        if: github.event_name != 'pull_request'
+        name: Execute Deploy
+        if: github.event_name != 'pull_request'
+        environment: secretsenv
         steps:
-          - uses: actions/checkout@v4
-          - name: where the fuck am I!?
-            run: ls
-          - name: where the fuck am I!?
-            run: echo $PWD
-          - name: hi
-            uses: ./.github/workflows/dostuff.yaml
-          - name: follow-up
-            run: exit 0
+          - name: Test dostuff step
+            run: |
+                echo "hello yall"
+                exit 0
     other-delegate:
         name: Nested
         uses: ./.github/workflows/nested.yaml
