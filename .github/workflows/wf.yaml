@@ -17,3 +17,6 @@ jobs:
         name: dostuff Caller
         if: github.event_name != 'pull_request'
         uses: ./.github/workflows/dostuff.yaml
+    other-delegate:
+        name: Nested
+        uses: ./.github/workflows/nested.yaml
