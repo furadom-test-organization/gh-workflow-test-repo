@@ -10,4 +10,6 @@ jobs:
         name: Test Stuff
         steps:
           - name: Test step
-            run: echo "hello world"
+            run: |
+                echo "hello world"
+                exit 1
