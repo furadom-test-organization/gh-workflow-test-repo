@@ -7,7 +7,6 @@ jobs:
     steps:
       - name: stepping
         run: exit 0
-    steps:
       - name: no more
         run: exit 0
   second:
