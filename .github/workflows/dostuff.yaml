@@ -3,7 +3,7 @@ on: [workflow_call, workflow_dispatch]
 jobs:
   sendit:
     runs-on: ubuntu-latest
-    name: Test Stuff dostuff
+#    name: Test Stuff dostuff
     environment: secretsenv
     steps:
       - name: Test dostuff step
