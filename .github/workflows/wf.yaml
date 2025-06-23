@@ -15,7 +15,7 @@ jobs:
                 exit 0
     call-dostuff:
         name: dostuff Caller
-        if: github.event_name != 'pull_request'
+#        if: github.event_name != 'pull_request'
         uses: ./.github/workflows/dostuff.yaml
     other-delegate:
         name: Nested
