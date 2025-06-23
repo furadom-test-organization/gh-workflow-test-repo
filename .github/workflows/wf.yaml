@@ -13,7 +13,7 @@ jobs:
             run: |
                 echo "hello world"
                 exit 0
-    call-deploy:
-        name: Deploy Caller
+    call-dostuff:
+        name: dostuff Caller
         if: github.event_name != 'pull_request'
-        uses: ./.github/workflows/deploy.yaml
+        uses: ./.github/workflows/dostuff.yaml
