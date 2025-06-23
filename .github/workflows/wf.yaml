@@ -21,8 +21,10 @@ jobs:
           - uses: actions/checkout@v4
           - name: where the fuck am I!?
             run: ls
+          - name: where the fuck am I!?
+            run: pdw
           - name: hi
-            uses: ./../.github/workflows/dostuff.yaml
+            uses: ./.github/workflows/dostuff.yaml
           - name: follow-up
             run: exit 0
     other-delegate:
