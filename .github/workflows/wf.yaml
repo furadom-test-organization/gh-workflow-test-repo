@@ -13,12 +13,6 @@ jobs:
             run: |
                 echo "hello world"
                 exit 0
-    deplox:
-        runs-on: ubuntu-latest
+    call-deploy:
         name: Test Stuff Deploy
-        environment: deploy
-        steps:
-          - name: Test deploy step
-            run: |
-                echo "hello yall"
-                exit 0
+        uses: ./.github/workflows/deploy.yaml
