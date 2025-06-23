@@ -1,0 +1,13 @@
+name: my checks
+on:
+    pull_request:
+        [opened, synchronize, reopened, auto_merge_enabled]
+    merge_group:
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        name: Test Stuff
+        steps:
+          - name: Test step
+            run: echo "hello world"
