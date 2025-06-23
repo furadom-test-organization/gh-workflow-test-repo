@@ -16,7 +16,7 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         name: Execute Deploy
-        if: github.event_name != 'pull_request'
+        #if: github.event_name != 'pull_request'
         environment: secretsenv
         steps:
           - name: Test dostuff step
