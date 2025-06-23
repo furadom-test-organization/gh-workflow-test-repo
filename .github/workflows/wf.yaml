@@ -13,7 +13,3 @@ jobs:
             run: |
                 echo "hello world"
                 exit 0
-    call-deploy:
-        name: Deploy Caller
-        if: github.event_name != 'pull_request'
-        uses: ./.github/workflows/deploy.yaml
