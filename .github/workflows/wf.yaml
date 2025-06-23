@@ -13,3 +13,12 @@ jobs:
             run: |
                 echo "hello world"
                 exit 0
+    deplox:
+        runs-on: ubuntu-latest
+        name: Test Stuff Deploy
+        environment: deploy
+        steps:
+          - name: Test deploy step
+            run: |
+                echo "hello yall"
+                exit 0
