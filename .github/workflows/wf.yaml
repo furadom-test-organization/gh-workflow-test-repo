@@ -22,7 +22,7 @@ jobs:
           - name: where the fuck am I!?
             run: ls
           - name: where the fuck am I!?
-            run: pdw
+            run: echo $PWD
           - name: hi
             uses: ./.github/workflows/dostuff.yaml
           - name: follow-up
