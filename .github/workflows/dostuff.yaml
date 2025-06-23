@@ -4,7 +4,7 @@ jobs:
   sendit:
     runs-on: ubuntu-latest
     name: Test Stuff dostuff
-    environment: secretenv
+    environment: secretsenv
     steps:
       - name: Test dostuff step
         run: |
