@@ -20,7 +20,7 @@ jobs:
         steps:
           - uses: actions/checkout@v4
           - name: hi
-            uses: ./.github/workflows/dostuff.yaml
+            uses: ./../.github/workflows/dostuff.yaml
           - name: follow-up
             run: exit 0
     other-delegate:
